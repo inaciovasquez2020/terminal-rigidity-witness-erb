@@ -37,3 +37,13 @@ If citing this witness in formal research:
   year = {2026},
   url = {[https://github.com/inaciovasquez2020/trw-erb-sigc](https://github.com/inaciovasquez2020/trw-erb-sigc)}
 }
+Contact
+Inacio F. Vasquez — Independent Research Program
+
+Email: inacio@vasquezresearch.com
+
+Web: www.vasquezresearch.com
+
+ORCID: 0009-0008-8459-3400
+
+© 2026 Inacio F. Vasquez. Core Logic 
