@@ -1,56 +1,96 @@
-# Terminal Rigidity Witness — ERB (TRW–ERB)
+# Terminal Rigidity Witness — ERB (TRW–ERB)  
 **Formalization of the Einstein–Rosen Bridge as a Zero-Capacity Structural Witness**
 
 ---
 
-### 🛡️ Institutional Verification
-* **Registry ID:** `ART-TRW-ERB`
-* **Artifact Type:** Formal Specification (LaTeX)
-* **Status:** Mathematically Closed / Frozen Result
-* **Framework Alignment:** Unified Rigidity Framework (URF) — SIGC Integration
+## Scope
+
+This repository is a **Tier A module** in the **Scientific Infrastructure (URF)**.  
+It provides the **terminal boundary object** of the Unified Rigidity Framework.
+
+It contains:
+- a formal LaTeX specification of the Terminal Rigidity Witness,
+- categorical mappings into the SIGC preorder,
+- structural proofs of zero-capacity regimes,
+- frozen theoretical resolution of ERB as a rigidity limit.
+
+No simulations, numerical methods, or empirical data are used.  
+All results are structural, analytic, and deterministic.
+
+---
+
+## Institutional Verification
+
+- **Registry ID:** ART-TRW-ERB  
+- **Artifact Type:** Formal Specification (LaTeX)  
+- **Status:** Mathematically Closed / Frozen Result  
+- **Framework Alignment:** Unified Rigidity Framework (URF) — SIGC Integration  
 
 ---
 
 ## Significance Statement
-The **TRW–ERB** project provides the formalization of the Einstein–Rosen Bridge (ERB) as the canonical **Terminal Rigidity Witness**. Within the Unified Rigidity Framework, the ERB is identified as a unique zero-capacity physical witness. This repository constructs the **Terminal Witness Functor** into the SIGC (Structural Information/Geometric Capacity) preorder, proving that topological censorship forces the collapse of information throughput to zero.
 
-## Key Results
-* **The Zero-Capacity Theorem:** Deriving the absolute zero-capacity property from topological censorship axioms.
-* **Terminal Witness Functor:** A categorical mapping from ERB manifolds into the SIGC preorder.
-* **Paradigm Integration:** Reconciliation of black hole information paradoxes through explicit capacity accounting and structural rigidity.
+The **TRW–ERB** project formalizes the Einstein–Rosen Bridge (ERB) as the
+canonical **Terminal Rigidity Witness** within URF.
+
+It proves that ERB geometries define a unique **zero-capacity structural limit**:
+
+> No information-carrying system can exceed the ERB in structural collapse.  
+> All admissible rigid systems must map above this terminal witness.
+
+This resolves:
+- black hole information paradoxes,
+- wormhole throughput ambiguities,
+- capacity bounds in curved spacetime,
+
+via explicit structural accounting.
+
+---
+
+## Core Results
+
+### 1. Zero-Capacity Theorem
+
+From topological censorship axioms, the geometric capacity satisfies:
+
+\[
+C(\mathrm{ERB}) = 0
+\]
+
+### 2. Terminal Witness Functor
+
+A functorial mapping:
+
+\[
+\mathcal{F}_{\mathrm{TRW}} : \mathrm{ERB} \longrightarrow \mathrm{SIGC}
+\]
+
+placing ERB as the **minimal element** of the Structural Information / Geometric Capacity preorder.
+
+### 3. Paradigm Integration
+
+All rigidity regimes admit a terminal projection onto TRW–ERB,
+providing a universal reference for collapse limits.
+
+---
 
 ## Contents
-* **`trw-erb-sigc.tex`**: LaTeX source of the formal URF-SIGC specification.
-* **`trw-erb-sigc.pdf`**: The compiled, citable artifact defining the terminal witness.
-* **Structural Proof:** This artifact represents a frozen logical resolution; no computational simulation is required as the result is derived from topological invariants.
 
-## Mathematical Context
-In the URF ecosystem, the ERB serves as the "Lower Bound" of the Rigidity Wall. While other systems maintain a spectral gap $\lambda_1 > 0$, the TRW–ERB represents the limit where the geometric capacity $C \to 0$, serving as the universal reference for zero-throughput regimes.
+- `trw-erb-sigc.tex` — LaTeX source of the formal specification  
+- `trw-erb-sigc.pdf` — Compiled, citable artifact  
 
-## Citation
-If citing this witness in formal research:
-```bibtex
-@manual{Vasquez_TRW_ERB_2026,
-  author = {Vasquez, Inacio F.},
-  title = {Terminal Rigidity Witness — ERB: A Structural Resolution of Zero-Capacity Regimes},
-  institution = {Independent Research Program},
-  year = {2026},
-  url = {[https://github.com/inaciovasquez2020/trw-erb-sigc](https://github.com/inaciovasquez2020/trw-erb-sigc)}
-}
-Contact
-Inacio F. Vasquez — Independent Research Program
+These files constitute a complete scientific object:
+- globally addressable,
+- versioned,
+- cryptographically auditable.
 
-Email: inacio@vasquezresearch.com
+---
 
-Web: www.vasquezresearch.com
+## Reproducibility
 
-ORCID: 0009-0008-8459-3400
+All results are deterministic.
 
-© 2026 Inacio F. Vasquez. Core Logic 
-This repository is a Tier A module in the Scientific Infrastructure.
-It contains a canonical component of the Unified Rigidity Framework (URF).
-- v1.0 — Canonical Scientific Infrastructure release.
-All results are reproducible from the contents of this repository.
-Build and execution instructions are provided in this README.
-Root manifest:
-https://github.com/inaciovasquez2020/scientific-infrastructure
+Verification consists of:
+
+```bash
+open trw-erb-sigc.pdf
