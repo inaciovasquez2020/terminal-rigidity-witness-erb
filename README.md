@@ -25,4 +25,8 @@ This repository is intentionally minimal and frozen in scope.
 - No generalizations
 - No downstream implementations
 
+## Project Links
+- ERB context: https://inaciovasquez2020.github.io
+- Status dashboard: https://inaciovasquez2020.github.io/vasquez-index/dashboard.html
+
 Any future work must occur in a separate repository.
