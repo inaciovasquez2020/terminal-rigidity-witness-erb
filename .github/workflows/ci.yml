@@ -1,0 +1,25 @@
+name: terminal-rigidity-witness-erb-sanity
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  sanity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check required files
+        run: |
+          test -f README.md
+          test -f STATUS.md
+          test -f FREEZE.md
+          test -f trw-erb-sigc.pdf
+          test -f trw-erb-sigc.tex
+          test -f CITATION.cff
+          echo "Sanity checks passed"
