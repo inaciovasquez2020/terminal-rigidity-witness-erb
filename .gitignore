@@ -4,3 +4,5 @@
 *.out
 *.fls
 *.fdb_latexmk
+# LaTeX outputs
+*.pdf
