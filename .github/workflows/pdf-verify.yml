@@ -1,12 +1,11 @@
-- name: Install TeX
-  run: |
-    set -euo pipefail
-    sudo apt-get update
-    sudo apt-get install -y \
-      texlive-latex-base \
-      texlive-latex-recommended \
-      texlive-latex-extra \
-      texlive-science \
-      texlive-pictures \
-      latexmk
+name: pdf-verify
 
+on:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Manual PDF verification (experimental)"
