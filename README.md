@@ -1,32 +1,51 @@
-Terminal Rigidity Witness (ERB)
+# Terminal Rigidity Witness (ERB)
 
-This repository contains the canonical definition and analysis of the
-Terminal Rigidity Witness (ERB), a structural obstruction derived within
-the Single-System Information Generation Capacity (SIGC) framework.
+Executable Rigidity Bound (ERB) witnesses for terminal rigidity.
 
-Contents
-- trw-erb-sigc.pdf: complete statement and analysis
-- trw-erb-sigc.tex: source
-- STATUS.md: formal claim status and dependency boundary
-- CITATION.cff: citation metadata
-- LICENSE: MIT
+A terminal rigidity witness certifies that a configuration admits **no admissible escape transformation**
+under bounded locality and capacity constraints.
 
-Status
-The ERB construction is defined and analyzed as stated in the paper.
-See STATUS.md for the authoritative scope and conditional dependencies.
+Formally, a witness W verifies
 
-Dependencies
-- SIGC framework assumptions as stated in the paper
-No other external dependencies are assumed.
+R(X) = True
 
-Scope
-This repository is intentionally minimal and frozen in scope.
-- No extensions
-- No generalizations
-- No downstream implementations
+where X is a terminal configuration satisfying
 
-## Project Links
-- ERB context: https://inaciovasquez2020.github.io
-- Status dashboard: https://inaciovasquez2020.github.io/vasquez-index/dashboard.html
+1. Local admissibility constraints
+2. Capacity bounds
+3. No escape morphism
 
-Any future work must occur in a separate repository.
+The witness therefore proves that the system is **terminally rigid**.
+
+## Witness Structure
+
+A rigidity witness consists of
+
+W = (C, B, V)
+
+C  configuration  
+B  capacity bound  
+V  verification procedure
+
+The witness verifies
+
+¬∃ T : X → Y
+
+such that T preserves locality constraints and capacity bounds.
+
+## Repository Structure
+
+src/
+core witness verification code
+
+docs/
+formal witness definitions
+
+proofs/
+example rigidity certificates
+
+tests/
+verification tests
+
+examples/
+demonstration witnesses
