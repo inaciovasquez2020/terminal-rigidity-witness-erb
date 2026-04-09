@@ -49,3 +49,6 @@ verification tests
 
 examples/
 demonstration witnesses
+
+## Conditional note
+- `docs/SCOPE_INTEGRITY_NOTE_2026_04.md` — conditional note specifying the weakest downstream-scope audit compatible with the repository's minimal frozen scope.
