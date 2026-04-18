@@ -8,11 +8,11 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   sanity:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
@@ -20,12 +20,9 @@ jobs:
       - name: Sanity checks
         run: |
           set -euo pipefail
-
           test -f README.md
           test -f STATUS.md
           test -f FREEZE.md
           test -f trw-erb-sigc.tex
           test -f CITATION.cff
-
           echo "Sanity checks passed"
-  workflow_dispatch:
