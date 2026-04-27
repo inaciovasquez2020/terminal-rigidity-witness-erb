@@ -52,3 +52,7 @@ demonstration witnesses
 
 ## Conditional note
 - `docs/SCOPE_INTEGRITY_NOTE_2026_04.md` — conditional note specifying the weakest downstream-scope audit compatible with the repository's minimal frozen scope.
+
+## Lean proof portfolio classification
+
+This repository is governed by [`docs/status/LEAN_PROOF_PORTFOLIO_CLASSIFICATION.md`](docs/status/LEAN_PROOF_PORTFOLIO_CLASSIFICATION.md). Its role in the portfolio is explicitly classified as proof-facing, conditional frontier, infrastructure/documentation, or legacy/scaffold.
