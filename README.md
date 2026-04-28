@@ -52,3 +52,7 @@ demonstration witnesses
 
 ## Conditional note
 - `docs/SCOPE_INTEGRITY_NOTE_2026_04.md` — conditional note specifying the weakest downstream-scope audit compatible with the repository's minimal frozen scope.
+
+## External status
+
+This repository is governed by [`docs/status/EXTERNAL_STATUS_LOCK.md`](docs/status/EXTERNAL_STATUS_LOCK.md). Build success, CI success, dashboards, ledgers, axioms, admits, `sorry`, or placeholder witnesses do not constitute theorem-level closure.
